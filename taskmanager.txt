@@ -1,0 +1,28 @@
+- create landing page
+- registration page
+	. email
+	. fullname
+	. username
+	. password 
+	. re-password
+- login page
+	. username
+	. password
+- dashboard page
+	* layout
+		. sidebar
+			- home
+			- reports
+			- settings
+			- logout
+		. main content
+			- uncompleted tasks
+				. title
+				. description
+				. status
+				. timestamp
+
+- reports page
+	. display a graph on how tasks are being completed by date
+	.  charts.js or google graphs
+

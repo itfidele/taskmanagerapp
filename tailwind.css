@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    header{
+        @apply p-2 text-gray-100;
+    }
+    
+    input{
+        @apply w-full;
+    }
+
+    #navmenu a{
+        @apply p-2 space-x-4 hover:text-gray-300 inline-flex;
+    }
+
+    button{
+        @apply inline-block border-2 my-2 text-gray-800 px-6 py-2.5 bg-gray-600 font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 hover:text-white active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out;
+    }
+}

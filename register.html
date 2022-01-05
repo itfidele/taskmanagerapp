@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+    <header class="bg-gray-800">
+        <nav class='flex flex-row'>
+            <div class="flex-1 text-2xl self-center">Task Manager</div>
+            <div id="navmenu">
+                <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                    </svg>&nbsp;Login</a>
+                <a href="register.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>&nbsp;Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class='grid grid-cols-2 h-screen'>
+        <div class="">
+            <img title='image productive'
+                src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Falejandrocremades%2Ffiles%2F2018%2F12%2Fbusiness-3605367_1920-1200x741.jpg"
+                class="object-cover h-screen" alt="" srcset="">
+        </div>
+        <div class='flex flex-col justify-center'>
+            <div class="w-1/2 self-center grid-cols-1 gap-2">
+                <div class='pb-6'>
+                    <h2 class='text-4xl inline-flex'><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>&nbsp;Sign up</h2>
+                </div>
+                
+                <div class="grid gap-2">
+                    <input type="text" placeholder="Full Name" title="email" name="email" id="">
+                    <input type="text" placeholder="Username" title="username" name="email" id="">
+                    <input type="email" placeholder="Email" title="email" name="email" id="">
+                    <input title="password" placeholder='Password' type="password" name="password" name="password" id="password">
+                    <input title="password" placeholder='Confirm password' type="password" name="password" name="repassword" id="repassword">
+                    <br>
+                    <button type="submit">Register</button>
+                    &nbsp;
+                    <a href="login.html" class="text-blue-800">I Already have account</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
