@@ -22,5 +22,9 @@ app.post("/dashboard", (req, res) => {
     res.render('dashboard')
 })
 
+
+app.get('/reports',(req, res)=>{
+    res.render('reports')
+})
 app.listen(port)
 

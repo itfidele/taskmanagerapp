@@ -1,13 +1,17 @@
 {
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
+    "cors": "^2.8.5",
     "express": "^4.17.2",
-    "hbs": "^4.2.0"
+    "express-hbs": "^2.4.0",
+    "hbs": "^4.2.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.5"
   },
   "scripts": {
     "front": "npx tailwindcss -i ./tailwind.css -o ./public/static/main.css --watch",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
