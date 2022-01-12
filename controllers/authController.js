@@ -6,6 +6,6 @@ exports.login = (req,res)=>{
 }
 
 
-exports.register=(rq,res)=>{z
+exports.register=(req,res)=>{
     res.render('register')
 }
