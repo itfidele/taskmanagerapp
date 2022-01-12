@@ -31,8 +31,6 @@ app.use('/',authRouter)
 app.use('/dashboard',dashboardRouter)
 
 const port=process.env.PORT || 3000
-
-const db=require('./models')
 const res = require('express/lib/response')
 
 

@@ -1,9 +1,9 @@
 const express = require('express');
-const db=require('../config/db.config')
+const db = require('../models')
 
 exports.homepage = (req,res)=>{
     const context = {}
-    const sql = "select * from tasks"
+    const sql = "select * from tasks order by id desc"
     db.query(sql, (error, results) => {
         if (error)
             throw error
@@ -28,6 +28,7 @@ exports.addtask =(req,res)=>{
             console.log(result)
             context.success = true
         })
+        res.redirect('/dashboard')
     }    
     res.render('addtask',context)
 }
