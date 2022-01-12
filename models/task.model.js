@@ -1,5 +1,5 @@
 module.exports = (sequelize,Sequelize)=>{
-    const Task = sequelize.define('tasks',{
+    return sequelize.define('tasks',{
         title: {
             type: Sequelize.STRING
         },
@@ -9,7 +9,5 @@ module.exports = (sequelize,Sequelize)=>{
         completed:{
             type: Sequelize.BOOLEAN
         }
-    })
-
-    return Task;
+    })    
 }

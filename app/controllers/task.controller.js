@@ -15,7 +15,7 @@ exports.create =(req,res)=>{
 
     Task.create(task)
         .then((data)=>{
-            res.send(data)
+            return data
         })
         .catch((err)=>{
             res.status(500).send({message:err.message || "some error occured while creating task"})
